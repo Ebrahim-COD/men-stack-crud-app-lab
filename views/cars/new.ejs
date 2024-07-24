@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a new car</title>
+  </head>
+  <body>
+    <a href="/cars/">Cars List</a>
+    <h1>Buy Cars</h1>
+    <form action="/cars" method="POST">
+      <label for="car">Car </label>
+      <select name="name" id="car" required>
+        <option value="">Choose</option>
+        <option value="Ford">Ford</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Audi">Audi</option>
+        <option value="Land Cruiser">Land Cruiser</option>
+      </select>
+      <label for="model">Model </label>
+      <input type="text" id="model" name="model" required />
+      <div>
+        <br />
+        <button type="submit">Buy Car</button>
+      </div>
+    </form>
+  </body>
+</html>
